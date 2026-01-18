@@ -2,40 +2,97 @@ img {
     max-width: 100%;
     height: auto;
 }
+body{
+    
+
+}
 .grid-container{
     display:grid;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 1px 15px 15px;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-areas:
-    "name name name bio"
-    "image-1 image-1 image-1 text-1"
-    "image-2 image-2 image-2 text-2"
-    "image-3 image-3 image-3 text-3";
+    "name name name . . bio"
+    "text-1 text-1 image-1 image-1 image-1 image-1  "
+    "text-2 text-2 image-2 image-2 image-2 image-2"
+    "text-3 text-3 image-3 image-3 image-3 image-3"
 
 
 }
 
 .name {
     grid-area: name;
-
+    
+}
+.name h1{
+    color:rgb(255, 0, 128);
+    font-size: 200px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name h1:hover{
+    color: antiquewhite;
+    transition: color 0.8s ease;
+   
 }
 .bio {
     grid-area: bio;
 }
+.bio p{
+    color: rgb(55, 0, 31);
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: justify;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+    transform: rotate(90deg);
+
+}
+.bio p:hover{
+    opacity: 1;
+}
 .image-1 {
     grid-area: image-1;
 }
+
 .image-2 {
     grid-area: image-2;
+}
+.image-2 img {
+    transition: transform 0.3s ease;
+}
+
+.image-2 img:hover {
+    transform: scale(1.5);
 }
 .image-3{
     grid-area:image-3;
 
 }
+.image-3 img {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0,);
+    transition: box-shadow 0.3 ease;
+}
+.image-3 img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.image-3 img {
+    transition: transform 0.5s ease;
+
+}
+.image-3 img:hover {
+    transform: rotate(45deg);
+
+}
 
 .text-1 {
     grid-area: text-1;
+}
+.text-1 p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    
+
 }
 .text-2 {
     grid-area: text-2;
@@ -43,3 +100,4 @@ img {
 .text-3 {
     grid-area: text-3;
 }
+

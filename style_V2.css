@@ -1,0 +1,91 @@
+@font-face {
+font-family: "Avara-Bold";
+src: url("fonts/Avara-Bold.woff2") format("woff2");
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: "Avara-Bold", serif;
+    font-size: 15px;
+    /* BASE SCHRIFT GRÖSSE */
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+
+/* RASTERRRRRRRR */
+    
+}
+.grid-container{
+    display:grid;
+    padding: 0px 30px 15px 15px;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+    "name name name . . bio"
+    ". text-1 image_paris_01 . . ."
+    "text-4 . . . . . "
+    ". . . . text-2 image-2"
+    ". text-3 image-3 . . ."
+}
+
+.name {
+    grid-area: name;
+    
+}
+.name h1{
+    color:rgb(255, 0, 128);
+    font-size: 12rem;
+    margin: 0;
+    
+}
+.name h1:hover{
+    color: antiquewhite;
+    font-size: 250px;
+}
+.bio {
+    grid-area: bio;
+}
+.bio p{
+    color: rgb(55, 0, 31);
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: justify;
+}
+.image_paris_01 {
+    grid-area: image_paris_01;
+}
+
+
+.image-2 {
+    grid-area: image-2;
+}
+.image-3{
+    grid-area:image-3;
+
+}
+
+.text-1 {
+    grid-area: text-1;
+}
+.text-1 p{
+    text-align: right;
+}
+
+    
+
+
+.text-2 {
+    grid-area: text-2;
+}
+.text-3 {
+    grid-area: text-3;
+}
+
+.text-4 {
+    grid-area: text-4;
+}

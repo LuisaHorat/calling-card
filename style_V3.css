@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-size: 10px;
+    /* BASE SCHRIFT GRÖSSE */
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+
+/* RASTERRRRRRRR */
+    
+}
+.grid-container{
+    display:grid;
+    padding: 0px 30px 15px 15px;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-areas:
+    "name bio_1 bio_2"
+    "text-1 text-2 text-3"
+    "image-4 image-5 image-6"
+    "text-5 text-5 text-5"
+    "image-7 image-7 ."
+    "image_paris_01 image-2 image-3"
+    
+
+   
+   }
+
+.name {
+    grid-area: name;
+    
+}
+.name h1{
+    color:rgb(55, 0, 31);
+    font-size: 20px;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+.name h1:hover{
+    color: rgb(255, 29, 138);
+    font-size: 50px;
+}
+.bio_1 {
+    grid-area: bio_1;
+}
+.bio_1{
+    color: rgb(55, 0, 31);
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif
+}
+.bio_2 {
+    grid-area: bio_2;
+}
+.bio_2 {
+ color: rgb(55, 0, 31);
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+    text-align:right;
+    font-family:Arial, Helvetica, sans-serif
+    
+
+}
+.image_paris_01 {
+    grid-area: image_paris_01;
+}
+
+.image-2 {
+    grid-area: image-2;
+
+}
+.image-3{
+    grid-area:image-3;
+
+}
+.image_paris_cover{
+    grid-area:image_paris_cover;
+
+}
+.image-4 {
+    grid-area:image-4;
+}
+.image-5 {
+    grid-area:image-5;
+    margin-bottom: 100px;
+}
+.image-6 {
+    grid-area:image-6;
+}
+.image-6 img {
+    transition: transform 0.3s ease;
+}
+.image-6 img:hover {
+    transform: scale(1.5);
+}
+.image-7 {
+    grid-area:image-7;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+.text-1 {
+    grid-area: text-1;
+}
+.text-1 p{
+    text-align:justify;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+
+}
+
+.text-2 {
+    grid-area: text-2;
+}
+.text-2 p{
+    text-align:justify
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+.text-3 {
+    grid-area: text-3;
+}
+.text-3 p{
+    text-align: center;
+}
+
+.text-4 {
+    grid-area: text-4;
+}
+
+.text-5 {
+    grid-area: text-5;
+}
+
+
