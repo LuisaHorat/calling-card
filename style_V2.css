@@ -58,7 +58,26 @@ img {
 }
 .image_paris_01 {
     grid-area: image_paris_01;
+    position:relative;
 }
+/* BILD HOVERN */
+.image_paris_01 img {
+    transition: opacity 0.3s ease;
+}
+.image_paris_01 .b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.image_paris_01:hover .a{
+    opacity: 0;
+
+}
+.image_paris_01:hover .b{
+    opacity: 1;
+}
+/* BILD HOVERN */
 
 
 .image-2 {

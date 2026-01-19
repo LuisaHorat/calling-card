@@ -17,17 +17,14 @@ img {
     display:grid;
     padding: 0px 30px 15px 15px;
     gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-areas:
-    "name bio_1 bio_2"
-    "text-1 text-2 text-3"
-    "image-4 image-5 image-6"
-    "text-5 text-5 text-5"
-    "image-7 image-7 ."
-    "image_paris_01 image-2 image-3"
-    
-
-   
+    "name . bio_1 . . bio_2"
+    ". text-1 . text-2 . text-3"
+    "image-4 . image-5 . image-6 ."
+    ". . . text-5 text-5 text-5"
+    "image-7 image-7. . . ."
+    "image_paris_01 . . . image-2 image-3"
    }
 
 .name {
@@ -37,8 +34,7 @@ img {
 .name h1{
     color:rgb(55, 0, 31);
     font-size: 20px;
-    margin: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:'Courier New', Courier, monospace;
     
 }
 .name h1:hover{
@@ -51,10 +47,10 @@ img {
 .bio_1{
     color: rgb(55, 0, 31);
     font-size: 20px;
-    margin: 0;
+    
     line-height: 1.2;
     text-align:center;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:'Courier New', Courier, monospace;
 }
 .bio_2 {
     grid-area: bio_2;
@@ -62,16 +58,15 @@ img {
 .bio_2 {
  color: rgb(55, 0, 31);
     font-size: 20px;
-    margin: 0;
+    
     line-height: 1.2;
     text-align:right;
-    font-family:Arial, Helvetica, sans-serif
-    
-
+    font-family:'Courier New', Courier, monospace;
 }
 .image_paris_01 {
     grid-area: image_paris_01;
 }
+
 
 .image-2 {
     grid-area: image-2;
@@ -88,9 +83,21 @@ img {
 .image-4 {
     grid-area:image-4;
 }
+.image-4 img {
+    transition: transform 0.3s ease;
+}
+.image-4 img:hover {
+    transform: scale(1.8);
+}
 .image-5 {
     grid-area:image-5;
     margin-bottom: 100px;
+}
+.image-5 img {
+    transition: transform 0.3s ease;
+}
+.image-5 img:hover {
+    transform: scale(1.8);
 }
 .image-6 {
     grid-area:image-6;
@@ -99,7 +106,7 @@ img {
     transition: transform 0.3s ease;
 }
 .image-6 img:hover {
-    transform: scale(1.5);
+    transform: scale(1.8);
 }
 .image-7 {
     grid-area:image-7;
@@ -112,14 +119,15 @@ img {
 
 
 
+
 .text-1 {
     grid-area: text-1;
 }
 .text-1 p{
-    text-align:justify;
+    text-align:left;
     font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 20px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
 
 }
 
@@ -127,16 +135,18 @@ img {
     grid-area: text-2;
 }
 .text-2 p{
-    text-align:justify
+    text-align:left;
     font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 20px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
 }
 .text-3 {
     grid-area: text-3;
 }
 .text-3 p{
-    text-align: center;
+    text-align:left;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 11px;
 }
 
 .text-4 {
@@ -145,6 +155,10 @@ img {
 
 .text-5 {
     grid-area: text-5;
+}
+.text-5 p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 11px;
 }
 
 
