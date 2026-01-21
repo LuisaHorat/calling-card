@@ -14,6 +14,7 @@ body{
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 
 
 /* RASTERRRRRRRR */
@@ -34,6 +35,13 @@ img {
 
 .name {
     grid-area: name;
+    /* NICHT MEHR IM GRID */
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    /* Z INDEX FÜR ÜBERLAPPEN */
+
+
     
 }
 .name h1{
@@ -82,6 +90,15 @@ img {
 
 .image-2 {
     grid-area: image-2;
+    position:relative;
+}
+.title {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0;
 }
 .image-3{
     grid-area:image-3;
