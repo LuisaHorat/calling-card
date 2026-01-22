@@ -254,6 +254,19 @@ img {
     margin-right: 400px;
     font-family: 'Bebas-Neue';
 }
+.grid-container:has(.text-1:hover) .image-19,
+.grid-container:has(.text-1:hover) .image-20,
+.grid-container:has(.text-1:hover) .image-11 {
+  opacity: 0.3;
+  transition: opacity 0.6s ease;
+}
+
+.image-19,
+.image-20,
+.image-11 {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
 
 .text-2 {
     grid-area: text-2;
@@ -311,7 +324,26 @@ img {
 
 }
 
+.text-3:hover ~ .image-22,
+.text-3:hover ~ .image-10,
+.text-3:hover ~ .image-30,
+.text-3:hover ~ .image-14,
+.text-3:hover ~ .image-13,
+.text-3:hover ~ .image-28 {
+  opacity: 0.3;
+  transition: opacity 0.6s ease;
+}
 
+
+.image-22,
+.image-10,
+.image-30,
+.image-14,
+.image-13,
+.image-28 {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
 .text-texte {
     grid-area: text-texte;
 }
@@ -322,6 +354,25 @@ img {
     margin-right: 400px;
     font-family: 'Bebas-Neue';
 
+}
+.grid-container:has(.text-texte:hover) .image-19,
+.grid-container:has(.text-texte:hover) .image-20,
+.grid-container:has(.text-texte:hover) .image-11,
+.grid-container:has(.text-texte:hover) .image-27,
+.grid-container:has(.text-texte:hover) .image-18,
+.grid-container:has(.text-texte:hover) .image-21 {
+  opacity: 0.3;
+  transition: opacity 0.6s ease;
+}
+
+.image-19,
+.image-20,
+.image-11,
+.image-27,
+.image-18,
+.image-21 {
+  opacity: 1;
+  transition: opacity 0.6s ease;
 }
 .text-dessins {
     grid-area: text-dessins;
@@ -335,8 +386,26 @@ img {
   
 
 }
+.grid-container:has(.text-dessins:hover) .image-14,
+.grid-container:has(.text-dessins:hover) .image-13,
+.grid-container:has(.text-dessins:hover) .image-28,
+.grid-container:has(.text-dessins:hover) .image-15,
+.grid-container:has(.text-dessins:hover) .image-16,
+.grid-container:has(.text-dessins:hover) .image-17 {
+  opacity: 0.3;
+  transition: opacity 0.6s ease;
+}
 
+.image-14,
+.image-13,
+.image-28,
+.image-15,
+.image-16,
+.image-17 {
+  opacity: 1;
+  transition: opacity 0.6s ease;
 
+}
 .text-photos {
     grid-area: text-photos;
 }
@@ -346,6 +415,25 @@ img {
     margin-left: -50px;
     margin-right: 400px;
     font-family: 'Bebas-Neue';
+}
+.grid-container:has(.text-photos:hover) .image-27,
+.grid-container:has(.text-photos:hover) .image-18,
+.grid-container:has(.text-photos:hover) .image-21,
+.grid-container:has(.text-photos:hover) .image-15,
+.grid-container:has(.text-photos:hover) .image-16,
+.grid-container:has(.text-photos:hover) .image-17 {
+  opacity: 0.3;
+  transition: opacity 0.6s ease;
+}
+
+.image-27,
+.image-18,
+.image-21,
+.image-15,
+.image-16,
+.image-17 {
+  opacity: 1;
+  transition: opacity 0.6s ease;
 }
 
 
@@ -417,8 +505,8 @@ img {
 .top p{
     font-family:'Bebas-Neue';
     font-size: 50px;
-    margin-bottom: 150px;
-    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-top: 120px;
     text-align: center;
 }
 .quote {
@@ -443,6 +531,7 @@ img {
     margin-left:30px;
     margin-right: 30px;
 }
+
 
 
 
