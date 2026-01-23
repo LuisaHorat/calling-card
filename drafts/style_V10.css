@@ -234,8 +234,7 @@ img {
     
 }
 .image-30 {
-    grid-area:image-30;
-    
+    grid-area:image-30;  
 }
 
 .text-1 {
@@ -430,7 +429,7 @@ img {
 .text-photos p{
     text-align:center;
     font-size: 40px;
-       margin-left: -100px;
+    margin-left: -100px;
     margin-right: -100px;
     font-family: 'Bebas-Neue';
 }

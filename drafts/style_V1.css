@@ -2,9 +2,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-body{
-    
-
+body {
+        background-color: rgb(255, 255, 255);
+    font-family: "Avara-Bold", serif;
+    font-size: 15px;
+    /* BASE SCHRIFT GRÖSSE */
 }
 .grid-container{
     display:grid;
